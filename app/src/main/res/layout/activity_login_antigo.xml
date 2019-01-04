@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_login"
+    tools:context="com.projetomycity.mycity.LoginActivity">
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/label_email"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:theme="@style/EditWhite"
+        android:ems="10"
+        android:hint="nome@dominio.com.br"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/color_white" />
+
+    <TextView
+        android:id="@+id/label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edit_email"
+        android:layout_marginTop="23dp"
+        android:text="E-mail: "
+        android:textColor="@color/color_white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha:"
+        android:textColor="@color/color_white"
+        android:textSize="18sp"
+        android:layout_below="@+id/edit_email"
+        android:layout_alignStart="@+id/edit_email"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edit_email"
+        android:layout_alignStart="@+id/label_senha"
+        android:layout_below="@+id/label_senha"
+        android:ems="10"
+        android:hint="******"
+        android:inputType="textPassword"
+        android:theme="@style/EditWhite"
+        android:textColor="@color/color_white" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:textColor="#2196F3"
+        android:text="ENTRAR"
+        android:layout_below="@+id/lembrar_me"
+        android:layout_alignStart="@+id/lembrar_me"
+        android:layout_alignEnd="@+id/edit_senha" />
+
+    <TextView
+        android:id="@+id/label_cr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/label_register"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="12dp"
+        android:text="© Desenvolvido por MyCity Mobile Development"
+        android:textColor="@color/color_white"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/label_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não possui uma conta? Registre-se!"
+        android:textColor="@color/color_white"
+        android:textStyle="italic"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/btn_login" />
+
+    <CheckBox
+        android:id="@+id/lembrar_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edit_senha"
+        android:layout_below="@+id/edit_senha"
+        android:text="Lembrar-me"
+        android:buttonTint="@color/color_white"
+        android:textColor="@color/color_white" />
+
+</RelativeLayout>
